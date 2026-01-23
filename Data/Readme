@@ -188,21 +188,6 @@ Entities were annotated following these principles:
 
 ---
 
-## Citation
-
-If you use this dataset, please cite:
-
-```bibtex
-@dataset{w2ner_clinical_dataset,
-  title = {Russian Clinical Guidelines NER Dataset},
-  author = {Your Name},
-  year = {2026},
-  url = {https://github.com/YOUR_USERNAME/W2NER-Clinical-NER}
-}
-```
-
----
-
 ## Privacy & Ethics
 
 - All data is from publicly available clinical guidelines
