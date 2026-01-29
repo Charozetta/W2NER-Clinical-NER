@@ -1,4 +1,4 @@
-# 📋 Entity Types Reference
+# Entity Types Reference
 
 This document describes all 13 entity types that the W2NER Clinical NER model can identify.
 
