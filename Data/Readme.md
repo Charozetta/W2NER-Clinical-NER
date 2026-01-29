@@ -80,32 +80,6 @@ Training and evaluation data for W2NER Clinical NER model.
 
 ---
 
-## Download Dataset
-
-### Option 1: Clone Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/W2NER-Clinical-NER.git
-cd W2NER-Clinical-NER/data
-```
-
-### Option 2: Direct Download
-
-```bash
-wget https://github.com/YOUR_USERNAME/W2NER-Clinical-NER/releases/download/v1.0/data.zip
-unzip data.zip
-```
-
-### Option 3: Python
-
-```python
-from w2ner_clinical import download_data
-
-download_data(save_dir="data/")
-```
-
----
-
 ## Data Statistics
 
 ### Sentence Length Distribution
