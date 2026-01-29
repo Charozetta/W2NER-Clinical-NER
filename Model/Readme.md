@@ -6,31 +6,16 @@ This directory contains pre-trained models for clinical NER.
 
 ## Download Model
 
-### Option 1: From GitHub Releases
+Download the latest model:
 
-Download the latest model from [Model]([https://github.com/Charozetta/W2NER-Clinical-NER/tree/main/Model]):
-
-- **guidelines_ru_model.pt** (707 MB) - Main model file
+- **guidelines_ru_model.pt** (707 MB) - Main model file (ready-to-use: https://drive.google.com/file/d/1PMRhYRsrOosNUaAHIcYL0UxBet__BIdB/view?usp=sharing)
 - **guidelines_ru.json** (1 KB) - Model configuration
 
-### Option 2: Using Script
+### Option 1: Using Script
 
 ```bash
 bash download_model.sh
 ```
-
-### Option 3: Manual Download
-
-```python
-from huggingface_hub import hf_hub_download
-
-# Download from Hugging Face (if uploaded there)
-model_path = hf_hub_download(
-    repo_id="YOUR_USERNAME/w2ner-clinical-ner",
-    filename="guidelines_ru_model.pt"
-)
-```
-
 ---
 
 ## Model Details
@@ -65,38 +50,9 @@ model_path = hf_hub_download(
 models/
 ├── README.md                    # This file
 ├── download_model.sh            # Download script
-├── guidelines_ru_model.pt       # Model weights
 └── guidelines_ru.json           # Model config
 ```
 
----
-
-## Usage
-
-```python
-from w2ner_clinical import ClinicalNER
-
-# Load model
-ner = ClinicalNER(model_path="models/guidelines_ru_model.pt")
-
-# Extract entities
-text = "Рекомендуется назначить Цитарабин 100 мг/м²"
-entities = ner.extract(text)
-```
-
----
-
-## Hosting Options
-
-### GitHub Releases (Current)
-- **Pros:** Free, integrated with repo
-- **Cons:** 2GB file size limit per file
-- **URL:** `https://github.com/YOUR_USERNAME/W2NER-Clinical-NER/releases/download/v1.0/guidelines_ru_model.pt`
-
-### Hugging Face Hub (Recommended for >2GB)
-- **Pros:** Unlimited size, CDN, versioning
-- **Cons:** Separate platform
-- **URL:** `https://huggingface.co/YOUR_USERNAME/w2ner-clinical-ner`
 ---
 
 ## File Sizes
