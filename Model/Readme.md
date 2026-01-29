@@ -97,12 +97,6 @@ entities = ner.extract(text)
 - **Pros:** Unlimited size, CDN, versioning
 - **Cons:** Separate platform
 - **URL:** `https://huggingface.co/YOUR_USERNAME/w2ner-clinical-ner`
-
-### Google Drive
-- **Pros:** Easy sharing
-- **Cons:** Download limits, no versioning
-- **URL:** `https://drive.google.com/file/d/YOUR_FILE_ID`
-
 ---
 
 ## File Sizes
