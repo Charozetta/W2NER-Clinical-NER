@@ -8,7 +8,7 @@ This directory contains pre-trained models for clinical NER.
 
 ### Option 1: From GitHub Releases
 
-Download the latest model from [Releases](https://github.com/YOUR_USERNAME/W2NER-Clinical-NER/releases/latest):
+Download the latest model from [Releases](https://github.com/Charozetta/W2NER-Clinical-NER/Model):
 
 - **guidelines_ru_model.pt** (707 MB) - Main model file
 - **guidelines_ru.json** (1 KB) - Model configuration
@@ -65,8 +65,8 @@ model_path = hf_hub_download(
 models/
 ├── README.md                    # This file
 ├── download_model.sh            # Download script
-├── guidelines_ru_model.pt       # Model weights (download separately)
-└── guidelines_ru.json           # Model config (download separately)
+├── guidelines_ru_model.pt       # Model weights
+└── guidelines_ru.json           # Model config
 ```
 
 ---
