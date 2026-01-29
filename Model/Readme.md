@@ -108,17 +108,3 @@ entities = ner.extract(text)
 | bert-base-multilingual-cased | 1.5 GB | Auto-downloaded |
 
 ---
-
-## Checksums
-
-Verify downloaded files:
-
-```bash
-# MD5
-md5sum guidelines_ru_model.pt
-# Expected: [TO BE ADDED]
-
-# SHA256
-sha256sum guidelines_ru_model.pt
-# Expected: [TO BE ADDED]
-```
