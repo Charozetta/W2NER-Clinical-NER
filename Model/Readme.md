@@ -8,7 +8,7 @@ This directory contains pre-trained models for clinical NER.
 
 ### Option 1: From GitHub Releases
 
-Download the latest model from [Model]([https://github.com/Charozetta/W2NER-Clinical-NER/tree/main/Model]):
+Download the latest model from [[Model]]([https://github.com/Charozetta/W2NER-Clinical-NER/tree/main/Model]):
 
 - **guidelines_ru_model.pt** (707 MB) - Main model file
 - **guidelines_ru.json** (1 KB) - Model configuration
