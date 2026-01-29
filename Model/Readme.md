@@ -128,9 +128,3 @@ md5sum guidelines_ru_model.pt
 sha256sum guidelines_ru_model.pt
 # Expected: [TO BE ADDED]
 ```
-
----
-
-## Model Card
-
-See [MODEL_CARD.md](../docs/MODEL_CARD.md) for detailed model information.
