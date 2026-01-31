@@ -82,55 +82,6 @@ Or use requirements.txt:
 ```bash
 pip install -r requirements.txt
 ```
-
----
-
-## Usage
-
-### Python API
-
-```python
-from w2ner_clinical import ClinicalNER
-
-# Initialize model
-ner = ClinicalNER(model_path="models/guidelines_ru_model.pt")
-
-# Extract entities from text
-text = "Рекомендуется назначить Цитарабин в дозе 100 мг/м²."
-entities = ner.extract(text)
-
-# Output:
-# [
-#   {"type": "ACTION / INTERVENTION", "text": "назначить"},
-#   {"type": "DRUG", "text": "Цитарабин"},
-#   {"type": "DOSAGE", "text": "100 мг/м²"}
-# ]
-```
-
-### Command Line
-
-```bash
-python inference.py \
-  --model models/guidelines_ru_model.pt \
-  --input data/my_documents/ \
-  --output results/
-```
-
-### Batch Processing
-
-```python
-from w2ner_clinical import ClinicalNER
-
-ner = ClinicalNER(model_path="models/guidelines_ru_model.pt")
-
-# Process multiple files
-files = ["doc1.md", "doc2.txt", "doc3.md"]
-results = ner.batch_process(files, batch_size=8)
-
-# Save results
-ner.save_results(results, "output.json")
-```
-
 ---
 
 ## Dataset
