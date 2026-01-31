@@ -44,7 +44,7 @@ The model identifies 13 types of medical entities in Russian clinical text:
 
 ## Quick Start (Google Colab)
 
-### Option A: Use Pre-trained Model (2 minutes) ⚡
+### Option A: Use Pre-trained Model (2 minutes)
 
 **For inference only - no training required**
 
