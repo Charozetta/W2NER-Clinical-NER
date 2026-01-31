@@ -44,23 +44,58 @@ The model identifies 13 types of medical entities in Russian clinical text:
 
 ## Quick Start (Google Colab)
 
-### Option A: Use Pre-trained Model (2 minutes)
+### Option A: Use Pre-trained Model (2 minutes) ⚡
 
-1. **Open in Colab:**
+**For inference only - no training required**
 
-2. **Upload files to `/content/`:**
-   - Download model from [Model](https://github.com/Charozetta/W2NER-Clinical-NER/tree/main/Model)
-   - Your `.md` or `.txt` files
+1. **Open notebook in Colab:**
+   - Use `W2NER.ipynb`
 
-3. **Run all cells**
+2. **Enable GPU:** 
+
+3. **Upload files to `/content/`:**
+   - `W2NER-main.zip` (configurations)
+   - `guidelines_ru_model.pt` (707 MB) (please use readme.md from [Model](https://github.com/Charozetta/W2NER-Clinical-NER/tree/main/Model))
+   - `w2ner_train.json` (for vocabulary)
+   - Your `.md` or `.txt` files with medical text
+
+4. **Run cells with:**
+   - Setup
+   - Unpack W2NER
+   - Copy model
+   - Build ID2LABEL
+   - Load model
+   - Load your texts
+   - Inference
+   - Extract entities
+   - Statistics
+
+5. **Download results** from `/content/W2NER-main/outputs/results.json`
+
+---
 
 ### Option B: Train from Scratch (6 minutes)
 
-1. **Open training notebook:**
+**For training your own model**
 
-2. **Enable GPU:** Runtime → Change runtime type → T4 GPU
+1. **Open notebook in Colab:**
+   - Use `W2NER.ipynb`
 
-3. **Run all cells**
+2. **Enable GPU:**
+
+3. **Upload files to `/content/`:**
+   - `W2NER-main.zip` (configurations)
+   - `w2ner_train.json` (training data)
+   - `w2ner_dev.json` (validation data)
+   - `w2ner_test.json` (test data)
+
+4. **Run all the cells 1-14:**
+   - Cells 1-6: Setup and data preparation
+   - **Cell 7: Training (~5 minutes)**
+   - Cells 8-10: Save and load trained model
+   - Cells 11-14: Inference on your texts
+
+5. **Your trained model** saved as `/content/W2NER-main/models/guidelines_ru_model.pt`
 
 ---
 
@@ -132,4 +167,5 @@ pip install -r requirements.txt
 | Test | 94.9% | 94.5% | 94.7% |
 
 ---
-## Acknowledgment
+### Acknowledgment
+
