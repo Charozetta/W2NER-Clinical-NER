@@ -169,6 +169,7 @@ pip install -r requirements.txt
 ---
 ### Acknowledgment
 
+```
 @inproceedings{li2022unified,
   title={Unified named entity recognition as word-word relation classification},
   author={Li, Jingye and Fei, Hao and Liu, Jiang and Wu, Shengqiong and Zhang, Meishan and Teng, Chong and Ji, Donghong and Li, Fei},
@@ -178,4 +179,5 @@ pip install -r requirements.txt
   pages={10965--10973},
   year={2022}
 }
+```
 
