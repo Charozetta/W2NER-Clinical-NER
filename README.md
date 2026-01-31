@@ -49,7 +49,7 @@ The model identifies 13 types of medical entities in Russian clinical text:
 1. **Open in Colab:**
 
 2. **Upload files to `/content/`:**
-   - Download model from [Model](https://github.com/Charozetta/W2NER-Clinical-NER/Model)
+   - Download model from [Model](https://github.com/Charozetta/W2NER-Clinical-NER/tree/main/Model)
    - Your `.md` or `.txt` files
 
 3. **Run all cells**
@@ -57,7 +57,6 @@ The model identifies 13 types of medical entities in Russian clinical text:
 ### Option B: Train from Scratch (6 minutes)
 
 1. **Open training notebook:**
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/W2NER-Clinical-NER/blob/main/notebooks/full_pipeline.ipynb)
 
 2. **Enable GPU:** Runtime → Change runtime type → T4 GPU
 
@@ -155,15 +154,6 @@ ner.save_results(results, "output.json")
   }
 ]
 ```
-
-### Download Dataset
-
-```bash
-# Download from Releases
-wget https://github.com/YOUR_USERNAME/W2NER-Clinical-NER/releases/download/v1.0/data.zip
-unzip data.zip -d data/
-```
-
 ---
 
 ## Model Details
@@ -191,36 +181,4 @@ unzip data.zip -d data/
 | Test | 94.9% | 94.5% | 94.7% |
 
 ---
----
-
-## 📖 Documentation
-
-- [Usage Guide](docs/USAGE.md) - Detailed usage instructions
-- [Training Guide](docs/TRAINING.md) - How to train your own model
-- [Entity Types](docs/ENTITY_TYPES.md) - Description of all entity types
-- [API Reference](docs/API.md) - Complete API documentation
-
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
----
-
-## 📝 Citation
-
-If you use this work in your research, please cite:
-
-```bibtex
-@software{w2ner_clinical_ner,
-  author = {Your Name},
-  title = {W2NER Clinical NER for Russian Medical Guidelines},
-  year = {2026},
-  url = {https://github.com/YOUR_USERNAME/W2NER-Clinical-NER}
-}
-```
-
----
+## Acknowledgment
