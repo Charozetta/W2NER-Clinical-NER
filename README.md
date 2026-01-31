@@ -47,10 +47,9 @@ The model identifies 13 types of medical entities in Russian clinical text:
 ### Option A: Use Pre-trained Model (2 minutes)
 
 1. **Open in Colab:**
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/W2NER-Clinical-NER/blob/main/notebooks/inference_example.ipynb)
 
 2. **Upload files to `/content/`:**
-   - Download model from [Releases](https://github.com/YOUR_USERNAME/W2NER-Clinical-NER/releases)
+   - Download model from [Model](https://github.com/Charozetta/W2NER-Clinical-NER/Model)
    - Your `.md` or `.txt` files
 
 3. **Run all cells**
@@ -66,7 +65,7 @@ The model identifies 13 types of medical entities in Russian clinical text:
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.8+
@@ -135,7 +134,7 @@ ner.save_results(results, "output.json")
 
 ---
 
-## 📚 Dataset
+## Dataset
 
 ### Training Data
 - **Source:** Russian clinical guidelines from Ministry of Health
@@ -167,7 +166,7 @@ unzip data.zip -d data/
 
 ---
 
-## 🎓 Model Details
+## Model Details
 
 ### Architecture
 - **Base Model:** W2NER (Word-Word Relation Network)
@@ -192,69 +191,6 @@ unzip data.zip -d data/
 | Test | 94.9% | 94.5% | 94.7% |
 
 ---
-
-## 📥 Download Pre-trained Model
-
-### Option 1: GitHub Releases
-
-Download from [Releases](https://github.com/YOUR_USERNAME/W2NER-Clinical-NER/releases/latest):
-- `guidelines_ru_model.pt` (707 MB)
-- `guidelines_ru.json` (config)
-
-### Option 2: Script
-
-```bash
-bash models/download_model.sh
-```
-
-### Option 3: Python
-
-```python
-from w2ner_clinical import download_model
-download_model(save_path="models/")
-```
-
----
-
-## 🔧 Advanced Usage
-
-### Custom Entity Types
-
-Train on your own data:
-
-```python
-from w2ner_clinical import Trainer
-
-trainer = Trainer(
-    train_data="data/my_train.json",
-    dev_data="data/my_dev.json",
-    epochs=10,
-    batch_size=12
-)
-
-trainer.train()
-trainer.save_model("models/my_model.pt")
-```
-
-### Fine-tuning
-
-Fine-tune on domain-specific data:
-
-```python
-from w2ner_clinical import ClinicalNER, Trainer
-
-# Load pre-trained model
-ner = ClinicalNER(model_path="models/guidelines_ru_model.pt")
-
-# Fine-tune
-trainer = Trainer.from_pretrained(ner)
-trainer.train(
-    train_data="data/domain_specific.json",
-    epochs=5,
-    learning_rate=1e-4
-)
-```
-
 ---
 
 ## 📖 Documentation
@@ -264,17 +200,6 @@ trainer.train(
 - [Entity Types](docs/ENTITY_TYPES.md) - Description of all entity types
 - [API Reference](docs/API.md) - Complete API documentation
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ---
 
@@ -282,21 +207,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-## 🙏 Acknowledgments
-
-- **W2NER Model:** Based on [ljynlp/W2NER](https://github.com/ljynlp/W2NER)
-- **BERT:** [bert-base-multilingual-cased](https://huggingface.co/bert-base-multilingual-cased)
-- **Dataset:** Russian clinical guidelines from Ministry of Health of the Russian Federation
-
----
-
-## 📧 Contact
-
-- **Author:** [Your Name]
-- **Email:** your.email@example.com
-- **GitHub:** [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
 
 ---
 
@@ -314,8 +224,3 @@ If you use this work in your research, please cite:
 ```
 
 ---
-## ⭐ Star History
-
-If you find this project useful, please consider giving it a star! ⭐
-
-[![Star History Chart](https://api.star-history.com/svg?repos=YOUR_USERNAME/W2NER-Clinical-NER&type=Date)](https://star-history.com/#YOUR_USERNAME/W2NER-Clinical-NER&Date)
